@@ -14,6 +14,9 @@ WA.onInit().then(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
+
+        const sound = WA.sound.loadSound('https://ia902701.us.archive.org/35/items/3ah2008-08-08.ka500.603a.722.flac24/3ah2008-08-08.ka500.603a.2444.set1.t03_Rush_Hour.mp3');
+        sound.play({});
     })
 
     WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)

@@ -342,7 +342,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":100,
          "x":0,
          "y":0
@@ -1623,7 +1623,7 @@
                  "name":"antipathopen",
                  "opacity":1,
                  "type":"tilelayer",
-                 "visible":false,
+                 "visible":true,
                  "width":100,
                  "x":0,
                  "y":0
@@ -1959,7 +1959,7 @@
         {
          "columns":8,
          "firstgid":1,
-         "image":"..\/..\/wa-map-fantasy\/src\/assets\/BaseChip_pipo.png",
+         "image":"src\/assets\/BaseChip_pipo.png",
          "imageheight":4256,
          "imagewidth":256,
          "margin":0,
@@ -1972,7 +1972,7 @@
         {
          "columns":8,
          "firstgid":1065,
-         "image":"..\/..\/wa-map-fantasy\/src\/assets\/Dirt_pipo.png",
+         "image":"src\/assets\/Dirt_pipo.png",
          "imageheight":1344,
          "imagewidth":256,
          "margin":0,
@@ -1985,7 +1985,7 @@
         {
          "columns":8,
          "firstgid":1401,
-         "image":"..\/..\/wa-map-fantasy\/src\/assets\/Grass_pipo.png",
+         "image":"src\/assets\/Grass_pipo.png",
          "imageheight":2112,
          "imagewidth":256,
          "margin":0,
@@ -1998,7 +1998,7 @@
         {
          "columns":6,
          "firstgid":1929,
-         "image":"..\/..\/wa-map-jamespot-office\/src\/assets\/WA_Special_Zones.png",
+         "image":"src\/assets\/WA_Special_Zones.png",
          "imageheight":64,
          "imagewidth":192,
          "margin":0,

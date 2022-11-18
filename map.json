@@ -1645,6 +1645,12 @@
          "id":145,
          "name":"door2-close",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"collides",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":100,
@@ -1756,12 +1762,6 @@
          "id":144,
          "name":"door2-open",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"collide",
-                 "type":"bool",
-                 "value":true
-                }],
          "type":"tilelayer",
          "visible":false,
          "width":100,

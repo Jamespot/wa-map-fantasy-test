@@ -6661,6 +6661,44 @@
                  "width":0,
                  "x":2458,
                  "y":3449
+                }, 
+                {
+                 "class":"variable",
+                 "height":0,
+                 "id":29,
+                 "name":"doorZ2-end",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Z2\/doorZ2-end_close"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Z2\/doorZ2-end_open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":0,
+                 "x":2261,
+                 "y":3464
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -7193,7 +7231,7 @@
          "y":0
         }],
  "nextlayerid":182,
- "nextobjectid":29,
+ "nextobjectid":30,
  "orientation":"orthogonal",
  "properties":[
         {

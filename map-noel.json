@@ -5743,11 +5743,6 @@
                  "value":false
                 }, 
                 {
-                 "name":"code",
-                 "type":"string",
-                 "value":"1234"
-                }, 
-                {
                  "name":"doorVariable",
                  "type":"string",
                  "value":"door1"
@@ -5929,46 +5924,8 @@
                  "rotation":0,
                  "visible":true,
                  "width":0,
-                 "x":2686.33333333333,
-                 "y":3274.33333333333
-                }, 
-                {
-                 "class":"variable",
-                 "height":0,
-                 "id":20,
-                 "name":"door2",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"closeLayer",
-                         "type":"string",
-                         "value":"door2_close"
-                        }, 
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"door",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"openLayer",
-                         "type":"string",
-                         "value":"door2_open"
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "visible":true,
-                 "width":0,
-                 "x":2719.83333333333,
-                 "y":3273.83333333333
+                 "x":2779.66666666666,
+                 "y":3431.66666666666
                 }, 
                 {
                  "class":"variable",

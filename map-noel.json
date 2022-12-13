@@ -4787,6 +4787,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"code",
+                         "type":"string",
+                         "value":"1234"
+                        }, 
+                        {
                          "name":"doorVariable",
                          "type":"string",
                          "value":"doorZ2-end"
@@ -5743,6 +5748,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"code",
+                 "type":"string",
+                 "value":"1234"
+                }, 
+                {
                  "name":"doorVariable",
                  "type":"string",
                  "value":"door1"
@@ -5890,7 +5900,6 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "class":"variable",
                  "height":0,
                  "id":26,
                  "name":"door1",
@@ -5922,13 +5931,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2779.66666666666,
                  "y":3431.66666666666
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":21,
                  "name":"atp01",
@@ -5960,13 +5969,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2784.25,
                  "y":3268.5
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":22,
                  "name":"atp02",
@@ -5998,13 +6007,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2814.91666666667,
                  "y":3265.33333333333
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":23,
                  "name":"atp03",
@@ -6036,13 +6045,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2847.5,
                  "y":3268.5
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":24,
                  "name":"atp04",
@@ -6074,13 +6083,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2880,
                  "y":3268.75
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":25,
                  "name":"atp05",
@@ -6112,13 +6121,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2912.25,
                  "y":3269.83333333333
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":27,
                  "name":"doorZ1-1",
@@ -6150,13 +6159,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2472,
                  "y":3268
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":28,
                  "name":"doorZ1-end",
@@ -6188,13 +6197,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2458,
                  "y":3449
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":29,
                  "name":"doorZ2-end",
@@ -6226,6 +6235,7 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2261,
@@ -6796,7 +6806,7 @@
          "value":"bundle.js"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.9.2",
+ "tiledversion":"1.8.6",
  "tileheight":32,
  "tilesets":[
         {
@@ -6963,6 +6973,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.9",
+ "version":"1.8",
  "width":100
 }

@@ -3961,7 +3961,7 @@
                         {
                          "name":"doorVariable",
                          "type":"string",
-                         "value":"doorZ1-1"
+                         "value":"doorZ1-2"
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -5187,7 +5187,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":120,
                  "id":178,
-                 "name":"doorZ2-2_zone",
+                 "name":"doorZ2-1_zone",
                  "opacity":1,
                  "properties":[
                         {
@@ -5203,7 +5203,7 @@
                         {
                          "name":"doorVariable",
                          "type":"string",
-                         "value":"doorZ2-2"
+                         "value":"doorZ2-1"
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -5334,7 +5334,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":120,
                  "id":177,
-                 "name":"doorZ2-2_close",
+                 "name":"doorZ2-1_close",
                  "opacity":1,
                  "type":"tilelayer",
                  "visible":true,
@@ -5465,7 +5465,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":120,
                  "id":176,
-                 "name":"doorZ2-2_open",
+                 "name":"doorZ2-1_open",
                  "opacity":1,
                  "type":"tilelayer",
                  "visible":false,
@@ -6167,6 +6167,44 @@
                 }, 
                 {
                  "height":0,
+                 "id":31,
+                 "name":"doorZ1-2",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Z1\/doorZ1-2_close"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Z1\/doorZ1-2_open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":2470,
+                 "y":3346
+                }, 
+                {
+                 "height":0,
                  "id":28,
                  "name":"doorZ1-end",
                  "point":true,
@@ -6200,8 +6238,8 @@
                  "type":"variable",
                  "visible":true,
                  "width":0,
-                 "x":2458,
-                 "y":3449
+                 "x":2462,
+                 "y":3811
                 }, 
                 {
                  "height":0,
@@ -6238,8 +6276,46 @@
                  "type":"variable",
                  "visible":true,
                  "width":0,
-                 "x":2261,
-                 "y":3464
+                 "x":2087.90909090909,
+                 "y":3818.84848484848
+                }, 
+                {
+                 "height":0,
+                 "id":30,
+                 "name":"doorZ2-1",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Z2\/doorZ2-1_close"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Z2\/doorZ2-1_open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":2084,
+                 "y":3322
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -6772,7 +6848,7 @@
          "y":0
         }],
  "nextlayerid":182,
- "nextobjectid":30,
+ "nextobjectid":32,
  "orientation":"orthogonal",
  "properties":[
         {

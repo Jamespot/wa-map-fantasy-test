@@ -3,6 +3,15 @@ import { getLayersMap, bootstrapExtra } from "@workadventure/scripting-api-extra
 
 console.log('Script started successfully');
 
+let s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "https://unpkg.com/@workadventure/scripting-api-extra@1.3.2/dist/keypad.html#door1_zone";
+document.getElementsByTagName("head")[0].append(s);
+s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "https://unpkg.com/@workadventure/scripting-api-extra@1.3.2/dist/js/keypad.bc0baf23529cf531fc6c.js";
+document.getElementsByTagName("head")[0].append(s);
+
 let currentPopup: any = undefined;
 
 // Waiting for the API to be ready

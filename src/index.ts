@@ -4,7 +4,7 @@ import { getLayersMap, bootstrapExtra } from "@workadventure/scripting-api-extra
 console.log('Script started successfully');
 
 let s = document.createElement("script");
-s.type = "text/javascript";
+s.type = "text/html";
 s.src = "https://unpkg.com/@workadventure/scripting-api-extra@1.3.2/dist/keypad.html#door1_zone";
 document.getElementsByTagName("head")[0].append(s);
 s = document.createElement("script");
@@ -25,10 +25,13 @@ WA.onInit().then(async () => {
         if (layer && layer.properties) {
             layer.properties.forEach(prop => {
                 if (prop.name === 'popupMessage') {
+                    console.log("setup a popup message")
                     let config: {targetZone: string, content: string} | undefined = undefined;
                     try {
+                        console.log("popup message properties " + prop.value);
                         config = JSON.parse(prop.value);
                         if (config && config?.targetZone && config?.content) {
+                            console.log("popup message subscribe events " + key)
                             WA.room.onEnterLayer(key).subscribe(openPopup(config.targetZone, config.content));
                             WA.room.onLeaveLayer(key).subscribe(closePopUp);
                         }

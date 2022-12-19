@@ -1,15 +1,36 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { getLayersMap, bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
 let currentPopup: any = undefined;
 
 // Waiting for the API to be ready
-WA.onInit().then(() => {
-    console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
-    
+WA.onInit().then(async () => {
+
+    let layers = await getLayersMap();
+    console.log('Current player name : ', WA.player.name);
+    console.log(layers);
+
+    layers.forEach((layer, key) => {
+        if (layer && layer.properties) {
+            layer.properties.forEach(prop => {
+                if (prop.name === 'popupMessage') {
+                    let config: {targetZone: string, content: string} | undefined = undefined;
+                    try {
+                        config = JSON.parse(prop.value);
+                        if (config && config?.targetZone && config?.content) {
+                            WA.room.onEnterLayer(key).subscribe(openPopup(config.targetZone, config.content));
+                            WA.room.onLeaveLayer(key).subscribe(closePopUp);
+                        }
+                    } catch(error) {
+                        /* silent error */
+                    }
+                }
+            });
+        }
+    });
+
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
@@ -33,4 +54,13 @@ function closePopUp(){
         currentPopup.close();
         currentPopup = undefined;
     }
+}
+
+function openPopup(zone: string, content: string) {
+    return () => {
+        if (currentPopup !== undefined) {
+            closePopUp();
+        }
+        currentPopup = WA.ui.openPopup(zone,content,[]);
+    };
 }

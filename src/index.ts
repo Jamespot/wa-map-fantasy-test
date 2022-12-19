@@ -25,14 +25,10 @@ WA.onInit().then(async () => {
         if (layer && layer.properties) {
             layer.properties.forEach(prop => {
                 if (prop.name === 'popupMessage') {
-                    console.log("setup a popup message")
                     let config: {targetZone: string, content: string} | undefined = undefined;
                     try {
-                        console.log("popup message properties " + prop.value);
                         config = JSON.parse(prop.value);
-                        console.log("popup message config " + config);
                         if (config && config?.targetZone && config?.content) {
-                            console.log("popup message subscribe events " + key)
                             WA.room.onEnterLayer(key).subscribe(openPopup(config.targetZone, config.content));
                             WA.room.onLeaveLayer(key).subscribe(closePopUp);
                         }

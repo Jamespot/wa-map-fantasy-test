@@ -615,7 +615,7 @@
                 {
                  "name":"autoClose",
                  "type":"bool",
-                 "value":false
+                 "value":true
                 }, 
                 {
                  "name":"autoOpen",
@@ -669,7 +669,7 @@
          "name":"door1_close",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":50,
          "x":0,
          "y":0
@@ -759,7 +759,7 @@
          "name":"door1_open",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":50,
          "x":0,
          "y":0
